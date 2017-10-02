@@ -164,10 +164,11 @@ UPDATE movies SET show_time = '21:30' WHERE title = 'Guardians of the Galaxy';
 
 DELETE FROM movies WHERE id in (10, 11, 12, 13);
 
-DELETE FROM people WHERE name in ('Alex The First', 'Alex The Second');
+-- DELETE FROM people WHERE name in ('Alex The First', 'Alex The Second');
 
 DELETE FROM movies WHERE id BETWEEN 10 AND 17;
 
+DELETE FROM people WHERE name LIKE 'A%';
 
 SELECT * FROM movies;
 SELECT name FROM people;

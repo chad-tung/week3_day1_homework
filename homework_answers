@@ -256,5 +256,8 @@ DELETE FROM movies WHERE id in (10, 11, 12, 13);
 DELETE FROM people WHERE name in ('Alex The First', 'Alex The Second');
 
 You can do in a range of values for id like this:
-DELETE FROM movies WHERE id BETWEEN 10 AND 17
-DELETE FROM movies WHERE id => 10
+DELETE FROM movies WHERE id BETWEEN 10 AND 17;
+DELETE FROM movies WHERE id => 10;
+
+And also for names beginning with:
+DELETE FROM people WHERE name LIKE 'A%';
